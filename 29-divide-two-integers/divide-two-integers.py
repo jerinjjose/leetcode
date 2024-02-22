@@ -7,11 +7,11 @@ class Solution:
         negative = (dividend<0 and divisor>=0) or (dividend>=0 and divisor<0)
         
         output = 0
-        
+        #https://www.youtube.com/watch?v=xefkgtd44hg
         while a>=b:
             counter = 1
             decrement = b
-            
+            # after the above logic and double the divisor and the incrdement values, to reduce numbe of loops
             while a>=decrement:
                 a-=decrement
                 
