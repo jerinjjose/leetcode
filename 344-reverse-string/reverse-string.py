@@ -5,8 +5,9 @@ class Solution:
         """
         if len(s) > 1:
 
+            mid = (len(s)) // 2
             index = 0
-            while (len(s)) // 2 > index:
+            while mid > index:
                 temp = s[index]
                 s[index] = s[(len(s) - 1 ) - index]
                 s[(len(s) - 1 ) - index] = temp
