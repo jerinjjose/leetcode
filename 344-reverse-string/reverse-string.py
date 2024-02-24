@@ -5,11 +5,9 @@ class Solution:
         """
         if len(s) > 1:
 
-            mid = (len(s)) // 2
             index = 0
-            while mid > index:
+            while (len(s)) // 2 > index:
                 temp = s[index]
                 s[index] = s[(len(s) - 1 ) - index]
                 s[(len(s) - 1 ) - index] = temp
                 index +=1
-        # for i in range(len(s)):
