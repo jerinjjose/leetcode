@@ -1,6 +1,6 @@
 class Solution:
     def reverse(self, x: int) -> int:
-        upper_limit = (2 ** 31) -1
+        upper_limit = (2 ** 31) -1 #to check the maxximum limit.
         ouput = 0
         is_negative = x < 0
         if is_negative:
