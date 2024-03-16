@@ -10,18 +10,16 @@ class Solution:
             "8" : ["t","u","v"],
             "9" : ["w","x","y","z"]
         }
+
         def backtrack(index, path):
             if index == len(digits):
                 result.append("".join(path))
                 return
 
             for char in numberMap[digits[index]]:
-                path.append(char)
-                backtrack(index + 1, path)
-                path.pop()
+                backtrack(index + 1, path + [char])
 
-        result=[]
-        if len(digits) > 0:
+        result = []
+        if digits:
             backtrack(0, [])
         return result
-        
